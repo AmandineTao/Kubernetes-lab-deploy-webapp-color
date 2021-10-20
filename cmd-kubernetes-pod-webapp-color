@@ -1,0 +1,10 @@
+1.Lien plateforme de test:
+https://katacoda.com/courses/kubernetes/playground
+start kubernetes
+
+2.Commandes deploiement pod webapp-color:
+
+vi pod-webapp-color.yml
+kubectl apply -f pod-webapp-color.yml
+kubectl get po
+kubectl port-forward amandine-pod-webapp 8080:8080 --address 0.0.0.0
